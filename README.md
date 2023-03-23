@@ -1,7 +1,7 @@
-# Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+- Practicing storybook with vue & vite 
 
-## Recommended IDE Setup
+- - If having problem to run npm run storybook with the error 03000086:digital envelope routines::initialization error , try this "export NODE_OPTIONS=--openssl-legacy-provider"
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- installed testing-library, addon-interactions and addon-links dependencies for using in Login component 
+
