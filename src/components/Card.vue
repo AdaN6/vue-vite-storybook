@@ -5,6 +5,9 @@
     <h4 class="title"> {{title}} </h4>
     <small class="secondary-text"> {{subText}} </small>
     <p class="supporting-text"> {{supportingText}} </p>
+    <div v-if="buttonText">
+        <a class="material-button"> {{buttonText}} </a>
+    </div>
 </div>
   
 </template>
@@ -17,6 +20,7 @@ export default {
         subText: String,
         mediaHref: String,
         supportingText: String,
+        buttonText: String,
     },
     computed: {
         mediaBg() {

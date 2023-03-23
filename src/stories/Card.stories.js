@@ -8,6 +8,7 @@ export default {
         subText: 'String',
         mediaHref: 'String',
         supportingText: 'String',
+        buttonText: 'String'
     }
 };
 
@@ -49,5 +50,13 @@ Third.args= {
     title: 'Secondary',
     subText: 'Media Text',
     mediaHref: 'placeholder.svg',
-    supportingText:'woolala'
+    supportingText:'MORE DESCRIPTION MORE MORE MROE'
+}
+export const ForthWithButton = Template.bind({})
+ForthWithButton.args= {
+    title: 'Secondary',
+    subText: 'Media Text',
+    mediaHref: 'placeholder.svg',
+    supportingText:'MORE DESCRIPTION MORE MORE MROE',
+    buttonText: 'go'
 }
