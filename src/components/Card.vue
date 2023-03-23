@@ -3,7 +3,7 @@
 <div class="card">
     <div class="media" :style="mediaBg" v-if="mediaHref"></div>
     <h4 class="title"> {{title}} </h4>
-    <p class="secondary-text"> {{subText}} </p>
+    <small class="secondary-text"> {{subText}} </small>
 </div>
   
 </template>
@@ -19,7 +19,7 @@ export default {
     computed: {
         mediaBg() {
             return {
-                backgroundImage: `url${this.mediaHref}`
+                backgroundImage: `url(${this.mediaHref})`
             }
         }
     }
