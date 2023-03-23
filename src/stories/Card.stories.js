@@ -42,7 +42,7 @@ export const Secondary = Template.bind({})
 Secondary.args= {
     title: 'Secondary',
     subText: 'Media Text',
-    mediaHref: 'favicon.co',
+    mediaHref: 'favicon.ico',
    
 }
 export const Third = Template.bind({})
