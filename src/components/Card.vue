@@ -4,6 +4,7 @@
     <div class="media" :style="mediaBg" v-if="mediaHref"></div>
     <h4 class="title"> {{title}} </h4>
     <small class="secondary-text"> {{subText}} </small>
+    <p class="supporting-text"> {{supportingText}} </p>
 </div>
   
 </template>
@@ -15,6 +16,7 @@ export default {
         title: String,
         subText: String,
         mediaHref: String,
+        supportingText: String,
     },
     computed: {
         mediaBg() {
@@ -41,7 +43,7 @@ export default {
     }
 
     .title, .secondary-text{
-       margin-bottom: .5rem auto .5rem auto;
+       margin-bottom: 0;
     }
     .material-button {
       color: rgb(76, 6, 141);

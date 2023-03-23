@@ -3,6 +3,12 @@ import Card from "../components/Card.vue";
 export default {
     title: "Card",
     component: Card,
+    argTypes: {
+        title: 'String',
+        subText: 'String',
+        mediaHref: 'String',
+        supportingText: 'String',
+    }
 };
 
 // const Template = (args) => ({
@@ -35,5 +41,13 @@ export const Secondary = Template.bind({})
 Secondary.args= {
     title: 'Secondary',
     subText: 'Media Text',
-    mediaHref: 'favicon.co'
+    mediaHref: 'favicon.co',
+   
+}
+export const Third = Template.bind({})
+Third.args= {
+    title: 'Secondary',
+    subText: 'Media Text',
+    mediaHref: 'placeholder.svg',
+    supportingText:'woolala'
 }
