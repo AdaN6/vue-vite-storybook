@@ -13,6 +13,10 @@ const Template = (args) => ({
     },
     template: '<Login v-bind="args"/>',
   });
+
+  function sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms))
+  }
   
   export const Primary = Template.bind({});
   
@@ -29,13 +33,18 @@ const Template = (args) => ({
         selector: 'button'
     })
 
+    await sleep(1000)
+    
     await userEvent.type(emailInput, 'text@dada.com', {
-        delay: 200
+        delay: 200,
     })
-
+    await sleep(1000)
+    
     await userEvent.type(passwordInput, 'Example', {
-        delay: 200
+        delay: 200,
     })
     
+    await sleep(1000)
+
     await userEvent.click(submitBtn)
   };
