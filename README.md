@@ -5,3 +5,8 @@
 
 - installed testing-library, addon-interactions and addon-links dependencies for using in Login component 
 
+## how to upgrade storybook?
+
+````
+npx sb upgrade
+````
